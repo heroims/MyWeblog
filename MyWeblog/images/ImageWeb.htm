@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎进入赵易奇的个人网站</title>
+<meta name="keywords" content="free blog template, blog layout, CSS, HTML" />
+<meta name="description" content="free blog website layout, blog template, blog layout which you can apply for any blog CMS" />
+<link href="../templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="../contentslider.css" />
+<script type="text/javascript" src="../contentslider.js">
+
+</script>
+<script type="text/javascript">
+    var str = document.title;
+    var i = 0;
+    var intervalID;
+    function intervalMain() {
+        document.title = str.substr(i + 1, str.length) + str.substr(0, i + 1);
+        i++;
+        if (i == str.length) {
+            i = 0;
+        }
+    }
+    function leaveclick(obj1, obj2) {
+        var d = document.getElementById("leaveMessage");
+        var name = document.getElementById(obj1);
+        var message = document.getElementById(obj2);
+        var li = document.createElement("li")
+        li.innerHTML = message.value + "——" + name.value;
+        if (name.value == "") {
+            li.innerHTML = message.value + "——匿名";
+        }
+        d.appendChild(li);
+    }
+</script>
+</head>
+<body  onload="intervalID=setInterval('intervalMain()',1000)">
+<bgsound src="music/jewel_stay here forever.mp3"/>
+	<div id="templatemo_header_panel">
+    	<div id="templatemo_header_section">
+            <div id="templatemo_title_section">
+                继续坚持 。。
+			</div>
+            <div id="templatemo_search_section">
+                <form method="get" action="#">
+                    用户：<input type="text" name="q" size="10" id="namefiled" title="namefiled" /><br />
+                    <input type="text" name="q" size="10" id="searchfield" title="searchfield" />
+                    <input type="button" name="Search" value="留言" id="searchbutton" title="Search" onclick="leaveclick('namefiled','searchfield')" />
+                </form>
+            </div>
+        </div>
+    </div> <!-- end of templatemo header panel -->
+    
+    <div id="templatemo_menu_panel">
+    	<div id="templatemo_menu_section">
+            <ul>
+                <li><a href="../index.html"  class="current">主页</a></li>
+                <li><a href="../webtest/webtest.html">Unity3D范例游戏</a></li>  
+                <li><a href="ImageWeb.htm">游戏图片</a></li>
+                <li><a href="../Download/DownloadWeb.htm">游戏下载</a></li>
+                <li><a href="../Map/MapWeb.htm">地图综合查询</a></li> 
+                <li><a href="#">关于</a></li>                     
+            </ul> 
+		</div>
+    </div> <!-- end of menu -->
+    
+	<div id="templatemo_content_container">
+        <div id="templatemo_content">
+            <div id="templatemo_content_left">
+				
+                <div class="templatemo_post">
+                	<h1 align="center">游戏图片</h1>
+           
+                   <img src="截图01.png" alt="image" style="width: 600px" />
+                   <br />
+                   <br />
+                   <img src="截图02.png" alt="image" style="width: 600px" />
+                   <br />
+                   <br />
+                   <img src="截图03.png" alt="image" style="width: 600px" />
+                </div> <!-- end of one post -->
+                
+
+                
+            </div> <!-- end of content left -->
+        
+            <div id="templatemo_content_right">
+            
+                <div class="templatemo_right_section">
+                    <h2>关于网页</h2>
+                    <p>本网页功能均需联网测试，地图嵌入的是百度地图，游戏需要下载Unity3D Player</p>
+                </div>
+            
+            	<div class="templatemo_right_section">
+                	<h2>主题</h2>
+					<ul>
+                        <li><a href="#">Unity3D范例游戏</a></li>
+                        <li><a href="#">游戏图片</a></li>
+                        <li><a href="#">游戏下载</a></li>
+                        <li><a href="#">地图综合查询</a></li>
+                        <li><a href="#">关于</a></li>
+                    </ul>
+                </div>
+                
+                <div class="templatemo_right_section">
+                	<h2>日期</h2>
+					<ul>
+                        <li><a href="#">1月 2024</a></li>
+                        <li><a href="#">12月 2023</a></li>
+                        <li><a href="#">11月 2023</a></li>
+                        <li><a href="#">10月 2023</a></li>
+                        <li><a href="#">9月 2023</a></li>
+                    </ul>
+                </div>
+                
+                <div class="templatemo_right_section">
+	                <h2>留言消息</h2>
+                	<ul id="leaveMessage">	
+                        <li>Lorem Ipsum on——Jack</li>
+                        <li>Consectetuer on——Hero</li>
+                    </ul>
+                </div>
+                
+            </div> <!-- end of right content -->
+	    </div> <!-- end of content -->
+    </div> <!-- end of content container -->
+
+	<div id="templatemo_bottom_panel">
+    	<div id="templatemo_bottom_section">
+        
+	        <div class="templatemo_bottom_section_content">
+                <h3>网页信息</h3>
+                <p>个人学习记录，记录最近的所学</p>
+            </div>
+          
+            <div class="templatemo_bottom_section_content">
+                <h3>组员</h3>
+                <ul>
+                    <li><a href="http://weibo.com/u/1773233291?wvr=5&" target="_parent">heroims</a></li>
+                </ul>
+            </div>
+            
+            <div class="templatemo_bottom_section_content">
+                <h3>关于详情</h3>
+                 <ul>
+                     <li><a href="#">详情</a></li>
+                </ul>
+            </div>
+        </div> <!-- end of templatemo bottom section -->
+    </div> <!-- end of templatemo bottom panel -->
+    <!--  HTML CSS Template Designed by w w w . t e m p l a t e m o . c o m  --> 
+    <div id="templatemo_footer_panel">
+    	<div id="templatemo_footer_section">
+			Copyright © 2012 <a href="#">赵易奇的个人网站</a>
+        </div>
+    </div>
+</body>
+</html>
